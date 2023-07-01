@@ -315,3 +315,51 @@ body.dark .switch::before {
     left: 88px;
     width: calc(100% - 88px);
 }
+
+
+
+/* ================== RTL =============== */
+
+.sidebar.rtl header .toggle {
+    right: auto;
+    left: -25px;
+    transform: translateY(-50%);
+}
+
+.sidebar.rtl .search-box input {
+    text-align: right;
+}
+
+.sidebar.rtl li .icon,
+.sidebar.rtl li .text {
+    text-align: right;
+}
+
+.sidebar.rtl .menu-bar .mode .toggle-switch {
+    right: auto;
+    left: 0;
+}
+
+.sidebar.rtl .switch::before {
+    left: auto;
+    right: 5px;
+}
+
+.home.rtl {
+    left: unset;
+    right: 250px;
+}
+
+.sidebar.close.rtl ~ .home {
+    left: unset;
+    right: 88px;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+.sidebar.rtl {
+    left: unset;
+    right: 0;
+}
